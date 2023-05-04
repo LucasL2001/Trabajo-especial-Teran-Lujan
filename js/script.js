@@ -1,4 +1,5 @@
 "use strict";
+console.log("esoy en el script");
 let numeroRandom=Math.floor(Math.random()*10000+1);
 console.log(numeroRandom);
 let numeroRandomHtml=document.querySelector("#numeroRandom");

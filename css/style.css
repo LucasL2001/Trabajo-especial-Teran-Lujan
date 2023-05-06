@@ -1,4 +1,24 @@
 *{
     margin: 0%;
     padding: 0%;
+    background-color: rgba(142, 183, 223, 0.868);
+    font-family: serif;
+}
+h1{
+    width: auto;
+    
+}
+header{
+    display: flex;
+    
+}
+
+.img-logo{
+    width: 50px;
+    height: 50px;
+}
+
+nav, section, h1{
+    border: solid 5px rgba(43, 103, 193, 0.954);
+    border-radius: 10px;
 }

@@ -3,7 +3,7 @@ console.log("esoy en el script");
 let numeroRandom=Math.floor(Math.random()*10000+1);
 console.log(numeroRandom);
 let numeroRandomHtml=document.querySelector("#numeroRandom");
-numeroRandomHtml.innerHTML=numeroRandom;
+numeroRandomHtml.innerHTML = numeroRandom;
 let button=document.querySelector("#boton");
 button.addEventListener("click",verificacion);
 function verificacion(evento){ 
@@ -25,5 +25,4 @@ function verificacion(evento){
         verificar.innerHTML="el captcha es incorrecto";
         
     }
-
 }

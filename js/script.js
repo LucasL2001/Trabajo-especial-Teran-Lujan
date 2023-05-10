@@ -14,7 +14,6 @@ function verificacion(evento){
     console.log(nombre); 
     let apellido=formData.get("apellido");
     let email=formData.get("email");
-    let jugadorPreferido=formData.get("jugadorPreferido");
     let inputCliente=formData.get("inputCliente");
     let verificar=document.querySelector("#verificar");
     if (Number(inputCliente)===numeroRandom) {

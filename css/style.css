@@ -12,7 +12,13 @@ header{
     display: flex;
     
 }
+nav#pagina.nav-sticky{
+    position: fixed;
+}
 
+nav.nav-sticky a:hover{
+    background-color: brown;
+}
 .img-logo{
     width: 50px;
     height: 50px;
@@ -22,3 +28,19 @@ nav, section, h1{
     border: solid 5px rgba(43, 103, 193, 0.954);
     border-radius: 10px;
 }
+<<<<<<< HEAD
+=======
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 8px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: double;
+}
+>>>>>>> 9fe66a863b7625835157eca7407d8e13526e04bd

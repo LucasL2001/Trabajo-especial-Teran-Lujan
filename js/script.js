@@ -17,7 +17,7 @@ function verificacion(evento){
     let inputCliente=formData.get("inputCliente");
     let verificar=document.querySelector("#verificar");
     if (Number(inputCliente)===numeroRandom) {
-        verificar.innerHTML= "el captcha es correcto enviado";
+        verificar.innerHTML= "el captcha es correcto, enviado";
         formulario.reset();
         
     } else {

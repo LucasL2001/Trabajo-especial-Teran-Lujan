@@ -6,19 +6,20 @@
 }
 h1{
     width: auto;
-    
 }
 header{
     display: flex;
-    
 }
 
 nav#pagina.nav-sticky{
     position: fixed;
 }
 
-nav.nav-sticky a:hover{
-    background-color: brown;
+nav a:hover, nav, section, h1,table tr td{
+    border-radius: 5px;
+}
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.749);
 }
 .img-logo{
     width: 50px;
@@ -30,7 +31,6 @@ nav.nav-sticky a:hover{
 
 nav, section, h1,table tr td{
     border: solid 5px rgba(43, 103, 193, 0.954);
-    border-radius: 10px;
 }
 nav ul{
     display: flex;
@@ -43,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a{
-    text-decoration: double;
+    text-decoration: none;
 }
 
 table tr td{

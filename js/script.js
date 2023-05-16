@@ -1,5 +1,4 @@
 "use strict";
-console.log("esoy en el script");
 let numeroRandom=Math.floor(Math.random()*10000+1);
 console.log(numeroRandom);
 let numeroRandomHtml=document.querySelector("#numeroRandom");
@@ -11,7 +10,6 @@ function verificacion(evento){
     let formulario=document.querySelector("#formulario");
     let formData=new FormData(formulario);
     let nombre=formData.get("nombre");
-    console.log(nombre); 
     let apellido=formData.get("apellido");
     let email=formData.get("email");
     let inputCliente=formData.get("inputCliente");

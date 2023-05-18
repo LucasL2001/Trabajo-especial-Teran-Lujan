@@ -1,0 +1,36 @@
+body{
+    display:flex;
+    flex-direction: column;
+}
+header{
+    z-index: 100;
+    position: fixed;
+}
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header nav ul li{
+    padding: 0px 5px;
+    list-style: none;
+}
+
+.nav title, 
+.nav nav ul li{
+    color: transparent;
+    visibility: hidden;
+}
+.nav.active title,
+.nav.active nav ul li{
+    color: white;
+    background-color: cadetblue;
+    visibility: visible;
+}
+footer {
+    background-color: black;
+}
+footer h1{
+    color: white;
+}

@@ -1,0 +1,21 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.tarjeta-presentacion{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tarjeta-nombreapellido, .tarjeta-profecion{
+    width: 50%;
+}
+.tarjeta-telefono{
+    text-align: center;
+}
+.tarjeta-email, .tarjeta-telefono, .tarjeta-direccion{
+    width: 33%;
+}
+.tarjeta-direccion{
+    text-align: end;
+}
+

@@ -9,6 +9,7 @@ h1{
 }
 header{
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav#pagina.nav-sticky{
@@ -49,3 +50,4 @@ nav ul li a{
 table tr td{
     padding: 2px 10px;
 }
+

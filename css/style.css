@@ -12,8 +12,8 @@ header{
     flex-wrap: wrap;
 }
 
-nav#pagina.nav-sticky{
-    position: fixed;
+nav#pagina{
+    display: none;
 }
 
 nav a:hover, nav, section, h1,table tr td{
@@ -49,5 +49,14 @@ nav ul li a{
 
 table tr td{
     padding: 2px 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    nav#pagina{
+        display: flex;
+    }
+    nav#pagina.nav-sticky{
+        position: fixed;
+    }
 }
 

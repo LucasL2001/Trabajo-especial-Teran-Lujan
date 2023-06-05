@@ -12,8 +12,8 @@ header{
     flex-wrap: wrap;
 }
 
-nav#pagina.nav-sticky{
-    position: fixed;
+nav#pagina{
+    display: none;
 }
 
 nav a:hover, nav, section, h1,table tr td{
@@ -61,6 +61,7 @@ ul.navegacion {
     flex-direction: column;
 }
 
+<<<<<<< HEAD
 ul.navegacion.show {
     display: flex;
 }
@@ -140,3 +141,14 @@ ul.navegacion li a {
         list-style: none;
     }
 }
+=======
+@media only screen and (min-width: 600px) {
+    nav#pagina{
+        display: flex;
+    }
+    nav#pagina.nav-sticky{
+        position: fixed;
+    }
+}
+
+>>>>>>> 37257deaec2e9a0e1946627d91e6b48c87c8fe87

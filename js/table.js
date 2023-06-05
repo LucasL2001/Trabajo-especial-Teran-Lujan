@@ -1,12 +1,21 @@
 'user strict'
 let listaevento= []
-document.querySelector('#btn-agregar').addEventListener('click', ()=>{
+document.querySelector('#btn-agregar').addEventListener('click', agregar())
+
+function agregar(){
     listaevento.push({
         evento : document.querySelector('#input-evento').value,
         dia : document.querySelector('#input-dia').value,
         lugar : document.querySelector('#input-lugar').value
     })
+    console.log('puto')
     mostrar()
+}
+
+document.querySelector('#btn-agregar3').addEventListener('click', ()=>{
+    for(let i=0; i< 3; i++){
+        agregar()
+    }
 })
 
 function mostrar(){

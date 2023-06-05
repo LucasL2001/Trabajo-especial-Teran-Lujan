@@ -39,3 +39,16 @@ document.querySelector('#btn-delete').addEventListener('click', ()=>{
     listaevento.pop()
     mostrar()
 })
+let medieval=[
+    {
+        "evento":"caballeros",
+        "dia":"11/06",
+        "lugar": "mar del plata",
+    },
+    {
+        "evento":"zeus",
+        "dia":"01/07",
+        "lugar": "tucuman", 
+    },
+];
+mostrar();

@@ -61,7 +61,6 @@ ul.navegacion {
     flex-direction: column;
 }
 
-<<<<<<< HEAD
 ul.navegacion.show {
     display: flex;
 }
@@ -88,7 +87,9 @@ ul.navegacion li a {
         display: flex;
         flex-wrap: wrap;
     }
-    
+    nav#pagina{
+        display: flex;
+    }
     nav#pagina.nav-sticky{
         position: fixed;
     }
@@ -127,11 +128,11 @@ ul.navegacion li a {
     table tr td{
         padding: 2px 10px;
     }
-     ul.navegacion {
+    ul.navegacion {
         display: flex;
         flex-direction: row;
     }
-     ul{
+    ul{
         display: flex;
         justify-content: space-around;
         list-style: none;
@@ -141,14 +142,3 @@ ul.navegacion li a {
         list-style: none;
     }
 }
-=======
-@media only screen and (min-width: 600px) {
-    nav#pagina{
-        display: flex;
-    }
-    nav#pagina.nav-sticky{
-        position: fixed;
-    }
-}
-
->>>>>>> 37257deaec2e9a0e1946627d91e6b48c87c8fe87

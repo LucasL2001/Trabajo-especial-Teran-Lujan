@@ -1,6 +1,5 @@
 "use strict";
 let numeroRandom=Math.floor(Math.random()*10000+1);
-console.log(numeroRandom);
 let numeroRandomHtml=document.querySelector("#numeroRandom");
 numeroRandomHtml.innerHTML = numeroRandom;
 let button=document.querySelector("#boton");

@@ -1,6 +1,42 @@
 'user strict'
-let listaevento= []
+let listaevento= [
+    {
+        nombre: 'La Llamada Del Hada',
+        dia: '06/06',
+        lugar: '"el dique", Tandil, Bs As'
+    },
+    {
+        nombre: 'La Casa Del Troll',
+        dia: '11/07',
+        lugar: '"la sima de las animas", Tandil, Bs As'
+    },
+    {
+        nombre: 'El Sueño de La Vampiro',
+        dia: '23/10',
+        lugar:'"La Cruz del Cerro" , Tandil, Bs As'
+    }]
+mostrar()
+
 document.querySelector('#btn-agregar').addEventListener('click', agregar)
+
+document.querySelector('#btn-agregar3').addEventListener('click', ()=>{
+    for(let i=0; i< 3; i++){
+        agregar()
+    }
+})
+
+
+
+document.querySelector('#btn-delete').addEventListener('click', quitaevento)
+
+document.querySelector('#btn-deleteall').addEventListener('click',()=>{
+    let canteventos= listaevento.length
+    for(let i=0; i<canteventos; i++){
+        quitaevento()
+    }
+})
+
+
 
 function agregar(){
     listaevento.push({
@@ -11,17 +47,9 @@ function agregar(){
     mostrar()
 }
 
-document.querySelector('#btn-agregar3').addEventListener('click', ()=>{
-    for(let i=0; i< 3; i++){
-        agregar()
-    }
-})
-
 function mostrar(){
-    let tabla= document.querySelector('#cont-table')
-    tabla.innerHTML=''
-    let cuerpotabla= document.createElement('tbody')
-    
+    let contenidotabla= document.querySelector('#cont-table')
+    contenidotabla.innerHTML=''
     listaevento.forEach(evento =>{
         let tr= document.createElement('tr')
 
@@ -37,16 +65,11 @@ function mostrar(){
         tdlugar.innerText= evento.lugar
         tr.appendChild(tdlugar)
 
-        cuerpotabla.appendChild(tr)
+        contenidotabla.appendChild(tr)
     })
-
-    tabla.appendChild(cuerpotabla)
-    
 }
 
-
-document.querySelector('#btn-delete').addEventListener('click', ()=>{
+function quitaevento(){
     listaevento.pop()
-
     mostrar()
-})
+}

@@ -1,4 +1,4 @@
-'user strict'
+"use strict"
 let listaevento= [
     {
         nombre: 'La Llamada Del Hada',

@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
     <header>
         <img src="images/logo pagina.png" alt="" class="img-logo">
         <h1>El Camino del Caballero </h1>
-        <div class="btn_menu">
-            <a>Menu</a>
-        </div>
+        
+        <button class="btn_menu">MENU</button>
+        
         <nav>
             <ul class="navegacion">
                 <li class="list_navegacion"><a href="home.html">Inicio</a></li>
@@ -23,17 +23,25 @@
             </ul>
         </nav>
     </header>
+    
     <section>
         <p>nombre del evento</p>
         <input type="text" id="input-evento">
+        
         <p>dia</p>
-        <input type="text" id="input-dia">
+        <input type="datetime-local" id="input-dia">
+        
         <p>lugar</p>
         <input type="text" id="input-lugar">
+        
         <button id="btn-agregar"> agregar evento</button>
+        
         <button id="btn-agregar3"> agregar 3 eventos</button>
+        
         <button id="btn-delete"> quitar evento</button>
+        
         <button id="btn-deleteall">limpiar lista de eventos</button>
+        
         <table>
         <thead>
             <tr>
@@ -46,10 +54,9 @@
 
         </tbody>
         </table>
+    
     </section>
-    <footer>
-
-    </footer>
+    
     <script src="js/table.js"></script>
     <script src="js/menu.js"></script>
 </body>

@@ -1,5 +1,9 @@
 "use strict"
-document.querySelector(".btn_menu").addEventListener("click",togglemenu);
+
+let btnmenu= document.querySelector(".btn_menu")
+
+btnmenu.addEventListener("click",togglemenu);
+
 function togglemenu(){
     document.querySelector(".navegacion").classList.toggle("show");
 }

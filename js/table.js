@@ -14,22 +14,29 @@ let listaevento= [
         nombre: 'El Sueño de La Vampiro',
         dia: '23/10',
         lugar:'"La Cruz del Cerro" , Tandil, Bs As'
-    }]
+    }
+]
 mostrar()
 
-document.querySelector('#btn-agregar').addEventListener('click', agregar)
+let btnagregar =  document.querySelector('#btn-agregar')
 
-document.querySelector('#btn-agregar3').addEventListener('click', ()=>{
+let btnagregar3 = document.querySelector('#btn-agregar3')
+
+let btndelete = document.querySelector('#btn-delete')
+
+let btndeleteall = document.querySelector('#btn-deleteall')
+
+btnagregar.addEventListener('click', agregar)
+
+btnagregar3.addEventListener('click', ()=>{
     for(let i=0; i< 3; i++){
         agregar()
     }
 })
 
+btndelete.addEventListener('click', quitaevento)
 
-
-document.querySelector('#btn-delete').addEventListener('click', quitaevento)
-
-document.querySelector('#btn-deleteall').addEventListener('click',()=>{
+btndeleteall.addEventListener('click',()=>{
     let canteventos= listaevento.length
     for(let i=0; i<canteventos; i++){
         quitaevento()
@@ -39,11 +46,19 @@ document.querySelector('#btn-deleteall').addEventListener('click',()=>{
 
 
 function agregar(){
-    listaevento.push({
-        nombre : document.querySelector('#input-evento').value,
-        dia : document.querySelector('#input-dia').value,
-        lugar : document.querySelector('#input-lugar').value
-    })
+    let nombre = document.querySelector('#input-evento').value
+
+    let dia = document.querySelector('#input-dia').value
+
+    let lugar = document.querySelector('#input-lugar').value
+    
+    if(nombre.trim() != "" && dia.trim() != "" && lugar.trim() != ""){
+        listaevento.push({
+            nombre : nombre,
+            dia : dia,
+            lugar : lugar
+        })
+    }
     mostrar()
 }
 

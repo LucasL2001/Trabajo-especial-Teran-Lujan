@@ -1,7 +1,10 @@
 "use strict"
 window.addEventListener("scroll", ()=>{
+
+    let pagina =document.querySelector('#pagina')
+
     if ( window.pageYOffset === 0 ){
-        document.querySelector('#pagina').classList.remove('nav-sticky');
+        pagina.classList.remove('nav-sticky');
     }else{
-        document.querySelector('#pagina').classList.add('nav-sticky');
+        pagina.classList.add('nav-sticky');
 }})

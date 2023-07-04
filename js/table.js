@@ -65,7 +65,10 @@ function agregar(){
 function mostrar(){
     let contenidotabla= document.querySelector('#cont-table')
     contenidotabla.innerHTML=''
-    listaevento.forEach(evento =>{
+    for (let i=0; i<listaevento.length; i++ ){
+
+        let evento = listaevento[i]
+
         let tr= document.createElement('tr')
 
         let tdnombre= document.createElement('td')
@@ -81,7 +84,7 @@ function mostrar(){
         tr.appendChild(tdlugar)
 
         contenidotabla.appendChild(tr)
-    })
+    }
 }
 
 function quitaevento(){
